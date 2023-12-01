@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
 // 1. config files and helpers
+@import "abstracts/colors";
+@import "abstracts/type";
 
 // 2. vendor related
+@import "vendor/normalize";
 
 // 3. base styles
+@import "base/base";
 
 // 4. layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/hero";
 
 // 5. components
