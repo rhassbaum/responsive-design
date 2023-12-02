@@ -9,10 +9,13 @@
 
 // 3. base styles
 @import "base/base";
+@import "base/typeography";
 
 // 4. layout
 @import "layout/grid";
 @import "layout/header";
 @import "layout/hero";
+@import "layout/nav";
 
 // 5. components
+@import "components/buttons";
