@@ -1,0 +1,11 @@
+.sales-points {
+    padding: 10vh 0 0;
+}
+
+.sales-point {
+    margin-bottom: 3.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
