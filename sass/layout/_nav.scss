@@ -10,11 +10,24 @@
 
     transition: all ease-in-out 250ms;
 
+    @media (min-width: 725px) {
+        position: relative;
+        flex: auto;
+        background: none;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+
     ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 100vh;
+
+        @media (min-width: 725px) {
+            flex-direction: row;
+            height: auto;
+        }
     }
 
     li {
@@ -22,7 +35,9 @@
         flex: 1 1 auto;
         border-bottom: 1px solid rgba(0, 0, 0, .15);
 
-
+        @media (min-width: 725px) {
+            border: none;
+        }
     }
 
     a {
@@ -35,6 +50,15 @@
 
         &:hover {
             background: rgba(0, 0, 0, .10);
+
+            @media (min-width: 725px) {
+                background: none;
+                color: darken($accent, 15%);
+            }
+        }
+
+        @media (min-width: 725px) {
+            justify-content: flex-end;
         }
     }
 
@@ -51,6 +75,10 @@
     top: 1em;
     right: 1em;
     cursor: pointer;
+
+    @media (min-width: 725px) {
+        display: none;
+    }
 }
 
 .hamburger,
