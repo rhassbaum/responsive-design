@@ -7,12 +7,12 @@
 // 2. vendor related
 @import "vendor/normalize";
 
+@import "layout/grid";
 // 3. base styles
 @import "base/base";
 @import "base/typeography";
 
 // 4. layout
-@import "layout/grid";
 @import "layout/header";
 @import "layout/hero";
 @import "layout/nav";
