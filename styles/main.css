@@ -420,6 +420,7 @@ h2 {
 .title-large {
   font-size: 3rem;
   font-weight: 900;
+  line-height: 0.9;
 }
 .title-large span {
   font-weight: 300;
@@ -447,6 +448,20 @@ h2 {
   .title-box + .bg-primary {
     padding-top: 8em;
   }
+}
+
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.title-footer::before, .title-footer::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.25;
+  margin: 0.75em 0;
 }
 
 .text-intro {
@@ -604,6 +619,53 @@ h2 {
   margin-bottom: 0;
 }
 
+footer {
+  background: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
+  padding: 5em 0;
+  position: relative;
+}
+footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer a {
+  color: rgb(255, 255, 255);
+}
+footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  opacity: 0.8;
+  margin: 0.7em 0;
+}
+footer .nav-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+footer .nav-footer a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75em 2.5em;
@@ -630,4 +692,14 @@ h2 {
 .btn--secondary:hover, .btn--secondary:focus {
   background: rgb(255, 255, 255);
   color: rgb(4, 140, 168);
+}
+
+.cta {
+  background-color: rgb(22, 219, 147);
+  background-image: url("../images/call-to-action-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
 }

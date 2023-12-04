@@ -36,6 +36,7 @@ h2 {
 .title-large {
     font-size: 3rem;
     font-weight: $font-black;
+    line-height: .9;
 
     span {
         font-weight: $font-light;
@@ -60,6 +61,22 @@ h2 {
         @media (min-width: 495px) {
             padding-top: 8em;
         }
+    }
+}
+
+.title-footer {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: $text-inverse;
+        opacity: .25;
+        margin: .75em 0;
     }
 }
 
